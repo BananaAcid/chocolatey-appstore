@@ -1,7 +1,7 @@
 
 # chocolatey-appstore theme as chrome extension
 
-![screenshot](//user-images.githubusercontent.com/1894723/70542634-5c2a1800-1b69-11ea-81bd-b13c1bc756c2.png)
+![screenshot](https://user-images.githubusercontent.com/1894723/70542634-5c2a1800-1b69-11ea-81bd-b13c1bc756c2.png)
 
   Changes all package install textboxes to installation buttons on chocolatey.org/packages and utilizes bcurran3's protocol handler.
 
