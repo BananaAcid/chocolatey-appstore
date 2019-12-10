@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Chocolatey Appstore",
+  "description": "Changes all package install textboxes to installation buttons on chocolatey.org/packages and utilizes bcurran3's protocol handler.",
+  "version": "1.0",
+  "author": "Nabil Redmann <info+chocoappstore@nabil-redmann.de>",
+  
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chocolatey.org/packages*"
+      ],
+      "js": ["jquery-3.4.1.slim.min.js", "content.js"]
+    }
+
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "icons": {
+    "100": "icon.png"
+  }
+}
