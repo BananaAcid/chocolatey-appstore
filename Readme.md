@@ -18,21 +18,23 @@
   taste.
 
 ## Installation
+Starting from the browser:
+
 1. install the extension from [Chrome web store in your Browser](https://chrome.google.com/webstore/detail/chocolatey-appstore/gkehnkphfligaeniienfamgdfocegffl)
 2. install chocolatey from [chocolatey.org](https://chocolatey.org/install)
 3. open the [packages page](https://chocolatey.org/packages) - there is an info box at the top, explaining the rest.
 
-## Manual installation
+## Manual installation of the chrome extension
 1. download the crx from the releases tab and drag it into your browser, and accept the installation
 
 or 
 
-1. download the zipped extension from releases tab or the subfolder `chocolatey-appstore-theme` and extract to your documents folder.
+1. download the content from the subfolder `chocolatey-appstore-theme` and extract to your documents folder.
 2. open `chrome://extensions` -> toggle `developer mode: on`
-3. click  `load unpacked extension ...` to load it from the folder
+3. click  `load unpacked extension ...` to load it from the folder saved to in step 1
 
 ## Dependencies
-1. [chocolatey](https://chocolatey.org/install)
+1. [Chocolatey](https://chocolatey.org/install)
 2. [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
 3. [Chocolatey Preinstaller Checks Extension](https://chocolatey.org/packages/chocolatey-preinstaller-checks.extension)
 

@@ -4,4 +4,5 @@ node_modules
 .DS_Store
 desktop.ini
 *.nupkg
-.\*.zip
+chocolatey-appstore-theme.zip
+*.crx

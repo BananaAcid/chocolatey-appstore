@@ -3,7 +3,7 @@
   "name": "Chocolatey Appstore",
   "short_name": "Choco Store",
   "description": "Changes all package install textboxes to installation buttons on chocolatey.org/packages and utilizes bcurran3's protocol handler.",
-  "version": "1.0",
+  "version": "1.1",
   "author": "Nabil Redmann <info+chocoappstore@nabil-redmann.de>",
   "homepage_url": "https://github.com/BananaAcid/chocolatey-appstore",
 
