@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>chocolatey-appstore-chrome</id>
+    <version>1.0.0</version>
+    <title>Chocolatey Appstore Theme for Chrome</title>
+    <authors>Nabil Redmann</authors>
+    <owners>Nabil Redmann,Community</owners>
+    <copyright>Nabil Redmann</copyright>
+    <packageSourceUrl>https://github.com/BananaAcid/chocolatey-appstore/tree/master</packageSourceUrl>
+    <projectSourceUrl>https://github.com/BananaAcid/chocolatey-appstore/tree/master</projectSourceUrl>
+    <projectUrl>https://chrome.google.com/webstore/detail/chocolatey-appstore/gkehnkphfligaeniienfamgdfocegffl</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/BananaAcid/chocolatey-appstore/master/chocolatey-appstore-theme/icon.png</iconUrl>
+    <docsUrl>https://github.com/BananaAcid/chocolatey-appstore/tree/master/#installation</docsUrl>
+    <bugTrackerUrl>https://github.com/BananaAcid/chocolatey-appstore/issues</bugTrackerUrl>
+    <licenseUrl>https://github.com/BananaAcid/chocolatey-appstore/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <mailingListUrl>https://github.com/BananaAcid/chocolatey-appstore/projects/1</mailingListUrl>
+    <description>
+![Screenshot of chocolatey-appstore](https://cdn.staticaly.com/gh/BananaAcid/chocolatey-appstore/master/res/screen_440x280.png)
+
+##Use the chocolatey.org/packages as app store
+
+  Changes all package install textboxes to installation buttons on chocolatey.org/packages and utilizes bcurran3's protocol handler.
+
+  Just search for your package as usual, but no need to copy the command line - just press install right next to it.
+
+  You can install multiple packages at the same time, the preinstaller checks extension packages runs them one after another.
+
+## Motivation 
+
+  I created this extension, because there was no protocoll support
+  on the chocolatey homepage - and chocolatey-gui fustratingly slow.
+
+  While at it, I changed the style of the app listing to suit my
+  taste.
+	
+##PACKAGING NOTE
+
+  This installation package contains no software. It updates a registry key with the chrome webstore id for the extension to make it known to Chrome. If you are in Chrome or on the next run, it will ask you for permission to enable the extension. Chrome will update the latest version of the extension itself. The package version is related to creating this package, not of the extension - you can savely ignore it.
+    </description>
+    <summary>Chocolatey packages homepage to work somewhat as an appstore</summary>
+    <tags>store chrome extension</tags>
+    <releaseNotes>Initial.</releaseNotes>
+    <dependencies>
+      <dependency id="googlechrome" version="4.0" />
+      <dependency id="choco-protocol-support" version="0.0.1" />
+      <dependency id="chocolatey-preinstaller-checks.extension" version="0.0.2.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

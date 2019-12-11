@@ -31,6 +31,12 @@ or
 2. open `chrome://extensions` -> toggle `developer mode: on`
 3. click  `load unpacked extension ...` to load it from the folder
 
+## Dependencies
+1. [chocolatey](https://chocolatey.org/install)
+2. [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
+3. [Chocolatey Preinstaller Checks Extension](https://chocolatey.org/packages/chocolatey-preinstaller-checks.extension)
+
+
 # License
 
   MIT
