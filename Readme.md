@@ -5,6 +5,12 @@
 
   Changes all package install textboxes to installation buttons on chocolatey.org/packages and utilizes bcurran3's protocol handler.
 
+  Just search for your package as usual, but no need to copy the command line - just press install right next to it.
+
+  You can install multiple packages at the same time, the preinstaller checks extension packages runs them one after another.
+
+## Motivation 
+
   I created this extension, because there was no protocoll support
   on the chocolatey homepage - and chocolatey-gui fustratingly slow.
 
@@ -16,7 +22,7 @@
 2. install chocolatey from [chocolatey.org](https://chocolatey.org/install)
 3. open the [packages page](https://chocolatey.org/packages) - there is an info box at the top, explaining the rest.
 
-## manual installation
+## Manual installation
 1. download the crx from the releases tab and drag it into your browser, and accept the installation
 
 or 
