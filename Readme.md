@@ -12,10 +12,18 @@
   taste.
 
 ## Installation
-
-1. download the extension and extract it. -> chrome://extensions -> developer on -> load from folder
+1. install the extension from [Chrome web store in your Browser](https://chrome.google.com/webstore/detail/chocolatey-appstore/gkehnkphfligaeniienfamgdfocegffl)
 2. install chocolatey from [chocolatey.org](https://chocolatey.org/install)
 3. open the [packages page](https://chocolatey.org/packages) - there is an info box at the top, explaining the rest.
+
+## manual installation
+1. download the crx from the releases tab and drag it into your browser, and accept the installation
+
+or 
+
+1. download the zipped extension from releases tab or the subfolder `chocolatey-appstore-theme` and extract to your documents folder.
+2. open `chrome://extensions` -> toggle `developer mode: on`
+3. click  `load unpacked extension ...` to load it from the folder
 
 # License
 
