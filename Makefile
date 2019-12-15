@@ -23,3 +23,13 @@ choco:
 	@echo === pack up
 	choco pack choco-package/chocolatey-appstore-chrome.nuspec
 	move chocolatey-appstore-chrome.*.nupkg release/
+
+test-choco:
+	cinst myApp -source .\choco-package
+
+test-chrome:
+	-taskkill /IM chrome.exe /F 2>NUL
+	@cmd /C "start /B make _test-chrome-async"
+
+_test-chrome-async:
+	cmd /C "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --load-extension=%cd%\chocolatey-appstore-theme https://chocolatey.org/packages
