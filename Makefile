@@ -33,3 +33,10 @@ test-chrome:
 
 _test-chrome-async:
 	cmd /C "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --load-extension=%cd%\chocolatey-appstore-theme https://chocolatey.org/packages
+
+
+choco-publish:
+	@echo === publish package
+	@cmd /C "dir release\*.nupkg /B"
+	@echo do it manually with the correct version:
+	@echo   choco push ./release/chocolatey-appstore-chrome.1.0.0.nupkg
