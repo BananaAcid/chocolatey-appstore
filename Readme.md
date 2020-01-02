@@ -18,6 +18,12 @@
   taste.
 
 ## Installation
+using chocolatey from the powershell commandline (extension + dependencies):
+
+```
+> choco install chocolatey-appstore-chrome
+```
+
 Starting from the browser:
 
 1. install the extension from [Chrome web store in your Browser](https://chrome.google.com/webstore/detail/chocolatey-appstore/gkehnkphfligaeniienfamgdfocegffl)

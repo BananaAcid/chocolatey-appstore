@@ -4,14 +4,14 @@
   <metadata>
     <id>chocolatey-appstore-chrome</id>
     <version>1.0.0</version>
-    <title>Chocolatey Appstore Theme for Chrome</title>
+    <title>Chocolatey Appstore Theme for Chrome (unofficial)</title>
     <authors>Nabil Redmann</authors>
     <owners>Nabil Redmann,Community</owners>
     <copyright>Nabil Redmann</copyright>
     <packageSourceUrl>https://github.com/BananaAcid/chocolatey-appstore/tree/master</packageSourceUrl>
     <projectSourceUrl>https://github.com/BananaAcid/chocolatey-appstore/tree/master</projectSourceUrl>
     <projectUrl>https://chrome.google.com/webstore/detail/chocolatey-appstore/gkehnkphfligaeniienfamgdfocegffl</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/BananaAcid/chocolatey-appstore/master/chocolatey-appstore-theme/icon.png</iconUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/BananaAcid/chocolatey-appstore/master/res/icon.png</iconUrl>
     <docsUrl>https://github.com/BananaAcid/chocolatey-appstore/tree/master/#installation</docsUrl>
     <bugTrackerUrl>https://github.com/BananaAcid/chocolatey-appstore/issues</bugTrackerUrl>
     <licenseUrl>https://github.com/BananaAcid/chocolatey-appstore/blob/master/LICENSE</licenseUrl>
@@ -20,7 +20,7 @@
     <description>
 ![Screenshot of chocolatey-appstore](https://cdn.staticaly.com/gh/BananaAcid/chocolatey-appstore/master/res/screen_440x280.png)
 
-##Use the chocolatey.org/packages as app store
+## Use the chocolatey.org/packages as app store
 
   Changes all package install textboxes to installation buttons on chocolatey.org/packages and utilizes bcurran3's protocol handler.
 
@@ -30,13 +30,13 @@
 
 ## Motivation 
 
-  I created this extension, because there was no protocoll support
+  I created this extension, because there was no protocol support
   on the chocolatey homepage - and chocolatey-gui fustratingly slow.
 
   While at it, I changed the style of the app listing to suit my
   taste.
 	
-##PACKAGING NOTE
+## PACKAGING NOTE
 
   This installation package contains no software. It updates a registry key with the chrome webstore id for the extension to make it known to Chrome. If you are in Chrome or on the next run, it will ask you for permission to enable the extension. Chrome will update the latest version of the extension itself. The package version is related to creating this package, not of the extension - you can savely ignore it.
     </description>
