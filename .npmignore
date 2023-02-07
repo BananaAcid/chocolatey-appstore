@@ -1,2 +1,5 @@
 test
 Makefile
+.history
+*.psd
+.vscode

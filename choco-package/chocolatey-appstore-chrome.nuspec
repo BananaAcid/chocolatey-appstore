@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>chocolatey-appstore-chrome</id>
-    <version>1.0.0</version>
+    <version>2.0.0</version>
     <title>Chocolatey Appstore Theme for Chrome (unofficial)</title>
     <authors>Nabil Redmann</authors>
     <owners>Nabil Redmann,Community</owners>
@@ -18,7 +18,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <mailingListUrl>https://github.com/BananaAcid/chocolatey-appstore/projects/1</mailingListUrl>
     <description>
-![Screenshot of chocolatey-appstore](https://cdn.staticaly.com/gh/BananaAcid/chocolatey-appstore/master/res/screen_440x280.png)
+<img src="https://user-images.githubusercontent.com/1894723/217387052-e63f1db8-e641-4fe0-80f4-4a1605629f7e.png" title="Screenshot of chocolatey-appstore" width="440px" />
 
 ## Use the chocolatey.org/packages as app store
 
@@ -42,11 +42,16 @@
     </description>
     <summary>Chocolatey packages homepage to work somewhat as an appstore</summary>
     <tags>store chrome extension</tags>
-    <releaseNotes>Initial.</releaseNotes>
+    <releaseNotes>Changes:
+Removed dependency on chrome to allow chromium.
+Removed dependency on optional [`chocolatey-preinstaller-checks.extension`](https://community.chocolatey.org/packages/chocolatey-preinstaller-checks.extension).
+Upadated `choco-protocol-support` version.
+Updated Packages url (thanks [@Mikle-Bond](https://github.com/Mikle-Bond)).
+Upgraded to manifest v3
+Updated style
+</releaseNotes>
     <dependencies>
-      <dependency id="googlechrome" version="4.0" />
-      <dependency id="choco-protocol-support" version="0.0.1" />
-      <dependency id="chocolatey-preinstaller-checks.extension" version="0.0.2.1" />
+      <dependency id="choco-protocol-support" version="0.1.1" />
     </dependencies>
   </metadata>
   <files>

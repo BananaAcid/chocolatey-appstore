@@ -3,7 +3,7 @@
 #
 # careful: if executed in powershell, it will still be in cmd
 #
-# using: https://chocolatey.org/packages/make and https://chocolatey.org/packages/choco-nuspec-checker
+# using: https://community.chocolatey.org/packages/make and https://community.chocolatey.org/packages/choco-nuspec-checker
 
 
 
@@ -32,7 +32,7 @@ test-chrome:
 	@cmd /C "start /B make _test-chrome-async"
 
 _test-chrome-async:
-	cmd /C "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --load-extension=%cd%\chocolatey-appstore-theme https://chocolatey.org/packages
+	cmd /C "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --load-extension=%cd%\chocolatey-appstore-theme https://community.chocolatey.org/packages
 
 
 choco-publish:

@@ -1,7 +1,7 @@
 
 # chocolatey-appstore theme as chrome extension
 
-![screenshot](https://user-images.githubusercontent.com/1894723/70542634-5c2a1800-1b69-11ea-81bd-b13c1bc756c2.png)
+![screenshot](https://user-images.githubusercontent.com/1894723/217387052-e63f1db8-e641-4fe0-80f4-4a1605629f7e.png)
 
   Changes all package install textboxes to installation buttons on chocolatey.org/packages and utilizes bcurran3's protocol handler.
 
@@ -45,7 +45,10 @@ ps> choco install chocolatey-appstore-chrome
 ## Dependencies
 1. [Chocolatey](https://chocolatey.org/install)
 2. [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
-3. [Chocolatey Preinstaller Checks Extension](https://chocolatey.org/packages/chocolatey-preinstaller-checks.extension)
+3. Chrome or Chromium browser
+
+## Optional Dependencies
+1. [Chocolatey Preinstaller Checks Extension](https://chocolatey.org/packages/chocolatey-preinstaller-checks.extension) to queue installations to avoid race-conditions while installing
 
 
 # License
@@ -53,3 +56,4 @@ ps> choco install chocolatey-appstore-chrome
   MIT
 
 ## Inital release (v1.0.0) in 10 Dez 2019
+## Updates (v.2.0.0) in 07 Feb 2023

@@ -1,23 +1,26 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Chocolatey Appstore",
   "short_name": "Choco Store",
   "description": "Changes all package install textboxes to installation buttons on chocolatey.org/packages and utilizes bcurran3's protocol handler.",
-  "version": "1.2",
+  "version": "2.0",
   "author": "Nabil Redmann <info+chocoappstore@nabil-redmann.de>",
   "homepage_url": "https://github.com/BananaAcid/chocolatey-appstore",
 
   "content_scripts": [
     {
       "matches": [
-        "https://chocolatey.org/packages*"
+        "https://community.chocolatey.org/packages*"
       ],
-      "js": ["jquery-3.4.1.slim.min.js", "content.js"]
+      "js": [
+        "lib/jquery-3.6.3.slim.min.js",
+        "content.js"
+      ]
     }
 
   ],
 
-  "browser_action": {
+  "action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
