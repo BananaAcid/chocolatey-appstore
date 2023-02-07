@@ -50,6 +50,12 @@ ps> choco install chocolatey-appstore-chrome
 ## Optional Dependencies
 1. [Chocolatey Preinstaller Checks Extension](https://chocolatey.org/packages/chocolatey-preinstaller-checks.extension) to queue installations to avoid race-conditions while installing
 
+## Dev Dependencies
+1. make
+2. 7zip
+3. choco-nuspec-checker
+
+Install them: `choco install -Y make 7zip choco-nuspec-checker`
 
 # License
 
