@@ -16,7 +16,7 @@ chrome:
 	@echo === packup as zip and filter using .gitignore
 	cmd /C "del release\chocolatey-appstore-theme.zip"
 	7z.exe a -tzip "release/chocolatey-appstore-theme.zip" "chocolatey-appstore-theme" -bd  -mx9 -xr@".gitignore"
-
+	@echo upload here: https://chrome.google.com/webstore/devconsole/
 
 choco:
 	@echo === validate the package definition
@@ -39,10 +39,11 @@ _test-chrome-async:
 	cmd /C "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --load-extension=%cd%\chocolatey-appstore-theme https://community.chocolatey.org/packages
 
 choco-login-info:
-	@echo Do login on first publishing on new machine:
+	@echo Do login first, prior to publishing (on new machine):
 	@echo choco apikey --api-key [API_KEY_HERE] -source https://push.chocolatey.org/
-	@echo  
-	@echo see: https://docs.chocolatey.org/en-us/create/create-packages-quick-start
+	@echo 
+	@echo api key here: https://community.chocolatey.org/account
+	@echo howto: https://docs.chocolatey.org/en-us/create/create-packages-quick-start
 
 choco-publish:
 	@echo === publish package
