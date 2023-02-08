@@ -14,6 +14,7 @@ all:
 
 chrome:
 	@echo === packup as zip and filter using .gitignore
+	cmd /C "del release\chocolatey-appstore-theme.zip"
 	7z.exe a -tzip "release/chocolatey-appstore-theme.zip" "chocolatey-appstore-theme" -bd  -mx9 -xr@".gitignore"
 
 
