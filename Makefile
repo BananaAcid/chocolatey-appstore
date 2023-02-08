@@ -25,7 +25,10 @@ choco:
 	move chocolatey-appstore-chrome.*.nupkg release/
 
 test-choco:
-	cinst myApp -source .\choco-package
+	cinst chocolatey-appstore-chrome -source .\choco-package
+
+test-build:
+	choco install chocolatey-appstore-chrome --source .\release
 
 test-chrome:
 	-taskkill /IM chrome.exe /F 2>NUL
@@ -34,6 +37,11 @@ test-chrome:
 _test-chrome-async:
 	cmd /C "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --load-extension=%cd%\chocolatey-appstore-theme https://community.chocolatey.org/packages
 
+choco-login-info:
+	@echo Do login on first publishing on new machine:
+	@echo choco apikey --api-key [API_KEY_HERE] -source https://push.chocolatey.org/
+	@echo  
+	@echo see: https://docs.chocolatey.org/en-us/create/create-packages-quick-start
 
 choco-publish:
 	@echo === publish package
