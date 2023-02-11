@@ -39,7 +39,7 @@ _test-chrome-async:
 	cmd /C "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --load-extension=%cd%\chocolatey-appstore-theme https://community.chocolatey.org/packages
 
 choco-login-info:
-	@echo Do login first, prior to publishing (on new machine):
+	@echo Do login first, prior to publishing (on new machine in admin):
 	@echo choco apikey --api-key [API_KEY_HERE] -source https://push.chocolatey.org/
 	@echo 
 	@echo api key here: https://community.chocolatey.org/account
@@ -49,4 +49,4 @@ choco-publish:
 	@echo === publish package
 	@cmd /C "dir release\*.nupkg /B"
 	@echo do it manually with the correct version:
-	@echo   choco push ./release/chocolatey-appstore-chrome.1.0.0.nupkg
+	@echo   choco push ./release/chocolatey-appstore-chrome. xxxx .nupkg
