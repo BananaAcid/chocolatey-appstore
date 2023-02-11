@@ -18,7 +18,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <mailingListUrl>https://github.com/BananaAcid/chocolatey-appstore/projects/1</mailingListUrl>
     <description>
-![Screenshot of chocolatey-appstore](https://cdn.staticaly.com/gh/BananaAcid/chocolatey-appstore/master/res/screen_2.0.0_440x233.png)
+![Screenshot of chocolatey-appstore](https://cdn.staticaly.com/gh/BananaAcid/chocolatey-appstore/master/res/screen_2.0.0_440x280.png)
 
 ## Use the chocolatey.org/packages as app store
 
@@ -51,7 +51,7 @@ Upgraded to manifest v3
 Updated style
 </releaseNotes>
     <dependencies>
-      <dependency id="choco-protocol-support" version="0.1.1" />
+      <dependency id="choco-protocol-support" />
     </dependencies>
   </metadata>
   <files>
