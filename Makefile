@@ -41,9 +41,12 @@ _test-chrome-async:
 choco-login-info:
 	@echo Do login first, prior to publishing (on new machine in admin):
 	@echo choco apikey --api-key [API_KEY_HERE] -source https://push.chocolatey.org/
-	@echo 
+	@echo.
 	@echo api key here: https://community.chocolatey.org/account
 	@echo howto: https://docs.chocolatey.org/en-us/create/create-packages-quick-start
+	@echo.
+	@echo Api key status:
+	choco apikey
 
 choco-publish:
 	@echo === publish package
