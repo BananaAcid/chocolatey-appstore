@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Continue'
+﻿$ErrorActionPreference = 'Stop'
 
 $bits = Get-ProcessorBits
 $packageName = 'chocolatey-appstore-chrome'
